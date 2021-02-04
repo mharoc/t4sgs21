@@ -29,13 +29,7 @@
 
 <main class="main-content">
  <div class="col-md-6 col-md-offset-2">
-<?php
-    if(isset($_SESSION['message']))
-    {
-         echo "<div id='error_msg'>".$_SESSION['message']."</div>";
-         unset($_SESSION['message']);
-    }
-?>
+
 <form method="post" action="login.php">
   <table>
      <tr>

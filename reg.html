@@ -19,8 +19,8 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav center">
-        <li><a href="login.php">Sign in</a></li>
-        <li><a href="register.php">Sign up</a></li>
+        <li><a href="signin.html">Sign in</a></li>
+        <li><a href="reg.html">Sign up</a></li>
       </ul>
 
     </div>
@@ -32,18 +32,11 @@
 
  <div class="col-md-6 col-md-offset-2">
 
-<?php
-    if(isset($_SESSION['message']))
-    {
-         echo "<div id='error_msg'>".$_SESSION['message']."</div>";
-         unset($_SESSION['message']);
-    }
-?>
 <form method="post" action="register.php">
   <table>
      <tr>
            <td>Username : </td>
-           <td><input type="text" name="username" class="textInput"></td>
+           <td><input type="text" name="username (firstLastname)" class="textInput"></td>
      </tr>
      <tr>
            <td>Email : </td>
